@@ -2,11 +2,13 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden;
     padding: 0;
+    margin: 0;
     background-color: #bbf0c0;
     font-size: 17px;
 }
 
 body {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +25,7 @@ h2 {
 }
 
 .navegationMenu {
-    padding: 0;
-    margin: 0;
+    z-index: 1;
     width: 100%;
     top: 0;
     position: fixed;
@@ -40,7 +41,7 @@ h2 {
     display: flex;
     height: 90px;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 .navegationMenu img {
@@ -52,8 +53,15 @@ h2 {
     font-size: 1.5rem
 }
 
+.navegationMenu a:hover {
+    color: #423d3d;
+    font-size: 1.5rem;
+    border-width: 10px;
+    z-index: 6;
+}
+
 .slides {
-    overflow: hidden;
+    z-index: -12;
     padding: 0;
     width: 100%;
     height: 700px;
@@ -75,11 +83,13 @@ h2 {
 }
 
 #one {
+    padding-bottom: 75px;
+    z-index: -1;
     width: 100%;
     background-repeat: no-repeat;
     height: 700px;
     background-image: url(/images/first.jpg);
-    background-position: center
+    background-position: center;
 }
 
 #two {
@@ -90,6 +100,7 @@ h2 {
 }
 
 #third {
+    padding-bottom: 75px;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -113,28 +124,30 @@ h2 {
     0% {
         margin-top: 0%;
     }
-    25% {
+    30% {
         margin-top: 0%;
         ;
     }
-    33% {
-        margin-top: -00px;
+    35% {
+        transform: translateY(-100%);
+        ;
     }
-    66% {
-        margin-top: -0;
+    65% {
+        transform: translateY(-100%);
     }
-    33% {
-        margin-top: -0%;
+    70% {
+        transform: translateY(-200%);
     }
-    33% {
-        margin-top: -0%;
+    95% {
+        transform: translateY(-200%);
     }
-    33% {
-        margin-top: -0%;
+    100% {
+        transform: translateY(0%);
     }
 }
 
 main {
+    z-index: 1;
     background-color: white;
     flex-direction: column;
     width: 100%;
@@ -277,7 +290,7 @@ footer {
 }
 
 .footer ul {
-    width: 95 %;
+    width: 95%;
 }
 
 
@@ -289,4 +302,12 @@ footer {
     align-items: flex-end;
     justify-content: end;
     font-size: 3rem;
+}
+
+.social a {
+    color: #419441;
+}
+
+.social a:hover {
+    color: #00FF00;
 }
