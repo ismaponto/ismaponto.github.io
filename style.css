@@ -1,0 +1,292 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: #bbf0c0;
+    font-size: 17px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+.navegationMenu {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    border-top: 3px;
+    justify-content: flex-start;
+    border-color: #8af593
+}
+
+.navegationMenu div {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: ivory;
+    display: flex;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center
+}
+
+.navegationMenu img {
+    height: 90px
+}
+
+.navegationMenu a {
+    color: #696969;
+    font-size: 1.5rem
+}
+
+.slides {
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: cambio 25s infinite;
+}
+
+.sliderdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+#one {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-image: url(/images/first.jpg);
+    background-position: center
+}
+
+#two {
+    background-repeat: no-repeat;
+    background-image: url(/images/second.jpg);
+    width: 100%;
+    background-position: center;
+}
+
+#third {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-image: url(/images/third.jpg)
+}
+
+.slides h1 {
+    text-align: center;
+    color: ivory;
+    font-size: 3rem
+}
+
+.slides p {
+    text-align: center;
+    width: 70%;
+    color: ivory;
+    font-size: 1.8rem
+}
+
+@keyframes cambio {
+    0% {
+        margin-top: 0%;
+    }
+    25% {
+        margin-top: 0%;
+        ;
+    }
+    33% {
+        margin-top: -00px;
+    }
+    66% {
+        margin-top: -0;
+    }
+    33% {
+        margin-top: -0%;
+    }
+    33% {
+        margin-top: -0%;
+    }
+    33% {
+        margin-top: -0%;
+    }
+}
+
+main {
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.serviciosContenedor {
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    text-align: center;
+    padding: 0%;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 2.8rem;
+    color: #419441
+}
+
+.serviciosContenedor p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem
+}
+
+.container {
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ideas img {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 25px
+}
+
+.container .ideas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+
+/* greencontainer */
+
+#firstgreencontainer {
+    height: 700px;
+}
+
+.greencontainer {
+    background-color: #bbf0c0;
+}
+
+.greencontainer h2 {
+    padding-top: 25px;
+    color: #419441;
+}
+
+
+/* video container */
+
+.video-container {
+    margin-bottom: 1px;
+    margin-top: 150px;
+    background-color: ivory;
+    padding-bottom: 150px;
+}
+
+.video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 0;
+}
+
+
+/* qui somemes nous */
+
+#qsn h2 {
+    padding-top: 40px;
+    align-items: center;
+}
+
+#qsn {
+    margin-bottom: 45px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+#person1 {
+    flex-direction: row-reverse;
+}
+
+.persona {
+    max-height: 450px;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.person img {
+    max-width: 450px;
+}
+
+.person p {
+    color: ivory;
+    height: 25%;
+    font-size: 1.8rem;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+
+/* footer */
+
+li {
+    list-style: none;
+    color: #419441;
+}
+
+footer {
+    display: flex;
+    width: 95%;
+}
+
+.footer ul {
+    width: 95 %;
+}
+
+
+/* social */
+
+.social {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    font-size: 3rem;
+}
