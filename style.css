@@ -1,436 +1,170 @@
-html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-    background-color: #fdfdfd;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-body {
-    max-width: 1800px;
-    width: 80%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-a {
-    text-decoration: none
-}
-
-h2 {
-    font-size: 2.7rem;
-}
-
-.navegationMenu {
-    height: 70px;
-    z-index: 90;
-    width: 80%;
-    top: 0;
-    position: fixed;
-    display: flex;
-    justify-content: flex-start;
-    border-color: #fdfdfd;
-    flex-direction: row;
-}
-
-.subdiv {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-}
-
-.navegationMenu div {
-    background-color: #fdfdfd;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navegationMenu img {
-    height: 100%;
-}
-
-.navegationMenu a {
-    color: #696969;
-    font-size: 1rem
-}
-
-.navegationMenu a:hover {
-    color: #423d3d;
-    font-size: 1.5rem;
-    border-width: 10px;
-    z-index: 6;
-    font-weight: 500;
-}
-
-.slides {
-    z-index: -12;
-    padding: 0;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    animation: cambio 16s infinite;
-}
-
-.sliderdiv {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-}
-
-#one {
-    padding: 0, 100%;
-    background-color: rgb(0, 20, 15);
-    padding-bottom: 75px;
-    z-index: -1;
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 700px;
-    background-image: url(/images/first.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#two {
-    background-repeat: no-repeat;
-    background-image: url(/images/second.jpg);
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-#third {
-    padding-bottom: 75px;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: center;
-    background-image: url(/images/third.jpg);
-    background-size: cover;
-}
-
-.slides h1 {
-    text-align: center;
-    color: #fdfdfd;
-    font-size: 3rem
-}
-
-.slides p {
-    text-align: center;
-    width: 70%;
-    color: #fdfdfd;
-    font-size: 1.8rem
-}
-
-@keyframes cambio {
-    0% {
-        transform: translateY(-0%);
-    }
-    45% {
-        transform: translateY(-0%);
-    }
-    55% {
-        transform: translateY(-110%);
-        ;
-    }
-    90% {
-        transform: translateY(-110%);
-    }
-    100% {
-        transform: translateY(-0%);
-        ;
-    }
-}
-
-main {
-    z-index: 1;
-    background-color: #fdfdfd;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.serviciosContenedor {
-    color: #423d3d;
-    align-items: center;
-    justify-content: flex-end;
-    width: 90%;
-    text-align: center;
-    padding: 0%;
-    margin: auto;
-}
-
-.serviciosContenedor p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 2.5rem
-}
-
-.container {
-    color: #423d3d;
-    align-items: center;
-    margin-top: 15px;
-    align-items: center;
-    justify-content: space-between;
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.ideas img {
-    width: 33%;
-    padding: 0;
-    margin-bottom: 25px
-}
-
-.container .ideas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 75%;
-}
-
-#fish {
-    flex-direction: row-reverse;
-}
-
-
-/* 4photoflex */
-
-.photoclas {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    color: #fdfdfd;
-    min-width: 250px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.photoclas p {
-    justify-content: center;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(4px);
-    border-radius: 20px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    height: 35%;
-    font-size: 1.54rem;
-    text-transform: uppercase;
-}
-
-#notreavtivite {
-    border-radius: 25px;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    height: 500px;
-    background-color: #bbf0c0;
-    flex-direction: row;
-}
-
-#photo1 {
-    min-width: 250px;
-    background-position: center;
-    background-size: cover;
-    z-index: 85;
-    background-image: url('./bioanicaptures/photo1.jpeg');
-    width: 25%;
-    background-repeat: no-repeat;
-}
-
-#photo2 {
-    background-position: center;
-    background-size: cover;
-    z-index: 85;
-    background-image: url('./bioanicaptures/photo2.jpeg');
-    width: 25%;
-    background-repeat: no-repeat;
-}
-
-#photo3 {
-    background-position: center;
-    background-size: cover;
-    z-index: 85;
-    background-image: url('./bioanicaptures/photo3.jpeg');
-    width: 25%;
-    background-repeat: no-repeat;
-}
-
-#photo4 {
-    background-position: center;
-    background-size: cover;
-    z-index: 85;
-    background-image: url('./bioanicaptures/photo4.jpeg');
-    width: 25%;
-    background-repeat: no-repeat;
-}
-
-
-/* video container */
-
-.video-container {
-    margin-bottom: 1px;
-    margin-top: 150px;
-    background-color: ivory;
-    padding-bottom: 150px;
-}
-
-.video-container h2 {
-    color: rgb(199, 185, 185);
-}
-
-.video {
-    height: 900px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 0;
-}
-
-
-/* qui somemes nous */
-
-#qsn h2 {
-    padding-top: 40px;
-    align-items: center;
-}
-
-#qsn {
-    margin-bottom: 45px;
-}
-
-.person {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 35px;
-}
-
-#person1 {
-    flex-direction: row-reverse;
-}
-
-.persona {
-    max-height: 450px;
-    height: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 75px;
-}
-
-.person img {
-    max-width: 450px;
-}
-
-.person p {
-    color: ivory;
-    height: 25%;
-    font-size: 1.8rem;
-    width: 50%;
-    align-self: center;
-    text-align: center;
-}
-
-
-/* footer */
-
-li {
-    list-style: none;
-    color: #419441;
-}
-
-footer {
-    justify-content: ;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 95%;
-}
-
-.footer ul {
-    width: 33%;
-    align-content: center;
-    justify-content: center;
-}
-
-
-/* social */
-
-.social {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: flex-end;
-    justify-content: end;
-    font-size: 1rem;
-}
-
-.social a {
-    color: #419441;
-}
-
-.social a:hover {
-    color: #00FF00;
-}
-
-
-/* navigacion */
-
-#navigacion {
-    width: 33%;
-}
-
-#navigacion li a {
-    color: #419441;
-    font-size: 1rem;
-}
-
-#navigacion li a:hover {
-    color: #00FF00;
-}
-
-
-/* media */
-
-@media (min-width: 480px) {
-    .html {
-        font-size: 20px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .container p {
-        font-size: 1.2rem;
-    }
-    footer li {
-        font-size: 2rem;
-    }
-    .social li {
-        font-size: 5rem;
-        margin-right: 15px;
-    }
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="./Logo/bioAniLogo.jpg">
+    <title>BioAni | Larves Afrique</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- iconos para botones -->
+    <!-- <i class='bx bx-menu'></i>
+       
+        <i class='bx bx-x'></i> -->
+
+    <header class="header" id="inicio">
+
+        <nav class="navegationMenu">
+            <div class="subdiv"><img src="Logo/bioAniLogo.jpg" alt="Company Logo" class="logo"></div>
+            <div class="subdiv">
+                <a href="#Accueil">Accueil</a>
+                <a href="#presentacionaccueil">Présentation</a>
+                <a href="#notreavtivite"> Notre activité</a>
+                <a href="">Nos produits</a>
+                <a href="#contact">Nous contacter</a>
+            </div>
+        </nav>
+        <ul class="slides" id='Accueil'>
+            <li>
+                <div class="sliderdiv" id="one">
+                    <h1> Promouvoir une solution locale & durable au service de l’indépendance et la resilience alimentaire
+                    </h1>
+
+                </div>
+            </li>
+            <li>
+                <div class="sliderdiv" id="two">
+                    <h1> Une ferme replicable pour garantir un fort impact environnemental et social
+                    </h1>
+            </li>
+            <li>
+                <div class="sliderdiv" id="three">
+                    <h1> Promouvoir une solution locale & durable au service de l’indépendance et la resilience alimentaire
+                    </h1>
+                </div>
+            </li>
+
+
+
+        </ul>
+
+
+
+    </header>
+    <main>
+        <section class="serviciosContenedor" id="Bioconversion">
+            <h1>BioAni | Larves Afrique</h1>
+
+            <div class="container ">
+                <div class="ideas " id="compost">
+                    <img src="/images/compost.png " alt="hands holding ground ">
+                    <div>
+                        <h2>Notre vision</h2>
+                        <p>Utiliser le biomimétisme au service de l’indépendance et la resilience alimentaire </p>
+                    </div>
+                </div>
+
+                <div class="ideas " id="fish">
+                    <img src="/images/fishBowl.png " alt="fishing bowl ">
+                    <div>
+                        <h2>Notre mission</h2>
+                        <p>Promouvoir un modèle d’alimentation circulaire, local et durable</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="photocontainer" id="notreavtivite">
+            <!-- <h2>Nos solution durable de valorisation</h2> -->
+            <container id="photo1" class="photoclas">
+                <p>Valorisation des déchets organiques</p>
+            </container>
+            <container id="photo2" class="photoclas">
+                <p>Un aliment ultra protéiné
+                </p>
+            </container>
+            <container id="photo3" class="photoclas">
+                <p>Un fertilisant pour revitaliser nos sols </p>
+            </container>
+            <container id="photo4" class="photoclas">
+                <p>Un minimum de ressources mobilisées
+                </p>
+            </container>
+        </section>
+
+        <section class="video-container " id="laferme ">
+            <h2>Shaping tomorrow with nature’s technologies
+            </h2>
+            <iframe class="video " width="50% " height="650px " src="https://www.youtube.com/embed/s59woU3_H5I " title="BioAni video farm introduction " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- <section class="greencontainer " id="qsn ">
+            <h2> Qui sommes-nous ?</h2>
+            <container class="person " id="person1 ">
+                <container class="persona "><img src="/person photos/person1.jpg " alt="foto person 1 " id="person1photo "></container>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque autem natus tempora consequatur accusamus ducimus magnam, obcaecati, a numquam repellendus sunt, amet ullam dolore aut architecto optio pariatur possimus ad! Odit enim magni
+                    obcaecati voluptatem eligendi impedit totam nihil. Deleniti nisi voluptas dolor quas eaque magnam voluptates sapiente dolore libero, magni, at laborum. Eligendi, laborum omnis. Eum magnam veniam optio?
+                    <strong>Je fais le melliore pims - Agathe</strong></p>
+            </container>
+
+            <container class="person " id="person2 ">
+                <container class="persona "><img src="/person photos/person2.jpg " alt="foto person 2 " id="person1photo "></container>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque autem natus tempora consequatur accusamus ducimus magnam, obcaecati, a numquam repellendus sunt, amet ullam dolore aut architecto optio pariatur possimus ad! Odit enim magni
+                    obcaecati voluptatem eligendi impedit totam nihil. Deleniti nisi voluptas dolor quas eaque magnam voluptates sapiente dolore libero, magni, at laborum. Eligendi, laborum omnis. Eum magnam veniam optio?
+                </p>
+            </container>
+            </container>
+        </section>
+
+    </main> -->
+
+        <footer>
+            <ul>
+                <li>1 Bd Saint Germain</li>
+                <li>04445556679</li>
+                <li>BioAni@bioani.com</li>
+            </ul>
+            <ul class="social" id="contact">
+
+                <li><a href="https://www.instagram.com/bioani_ci/ " class="instagram "><i class='bx bxl-instagram' target="_blank " rel="noreferrer noopener "></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/bioani.ci " class="facebook "><i class='bx bxl-facebook-square' target="_blank " rel="noreferrer noopener "></i></a>
+                </li>
+                <li> <a href="mailto:bioani@bioani.com "><i class='bx bxs-envelope'></i>
+                </a>
+                    <li>
+                        <a href="https://www.linkedin.com/company/bioani/"><i class='bx bxl-linkedin'></i></a>
+                    </li>
+                </li>
+            </ul>
+            <ul class="" id="navigacion">
+                <li><a href="#Accueil">Accueil</a></li>
+                <li> <a href="#presentacionaccueil">Présentation</a>
+                </li>
+                <li><a href="#notreavtivite"> Notre activité</a></li>
+                <li><a href="">Nos produits</a></li>
+                <li><a href="">Nous contacter</a>
+                </li>
+            </ul>
+
+
+
+        </footer>
+
+
+
+</body>
+
+</html>
