@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7481be65.css",
+    "main.js": "/static/js/main.b17f45c9.js",
+    "static/js/787.239d37d3.chunk.js": "/static/js/787.239d37d3.chunk.js",
+    "static/media/montaniasbyn.jpg": "/static/media/montaniasbyn.7aac3552111a0a01cb36.jpg",
+    "static/media/bird.jpg": "/static/media/bird.e0a639cc0abbd52d5331.jpg",
+    "index.html": "/index.html",
+    "main.7481be65.css.map": "/static/css/main.7481be65.css.map",
+    "main.b17f45c9.js.map": "/static/js/main.b17f45c9.js.map",
+    "787.239d37d3.chunk.js.map": "/static/js/787.239d37d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7481be65.css",
+    "static/js/main.b17f45c9.js"
+  ]
+}
